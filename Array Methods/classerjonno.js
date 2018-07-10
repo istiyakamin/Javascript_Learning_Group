@@ -123,6 +123,17 @@ arr19 = newArr.some(function(num){
 });
 console.log(arr19);
 
+// find
+arr20 = newArr.find(function(num){
+    return num > 50;
+})
+console.log(arr20);
+
+// findIndex
+arr21 = newArr.findIndex(function(num){
+    return num > 50
+})
+console.log(arr21);
 
 
 
