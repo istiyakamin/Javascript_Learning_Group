@@ -1,5 +1,5 @@
 // toString
-const arr = ['Apple', 'banana', 'tomato', 'Orange'];
+const arr = ['apple', 'banana', 'tomato', 'orange'];
 arr1 = arr.toString();
 console.log(arr1);
 console.log(typeof arr1);
@@ -16,7 +16,7 @@ console.log(arr);
 console.log(arr3);
 
 // unshift
-arr4 = arr.unshift('Lemon');
+arr4 = arr.unshift('lemon');
 console.log(arr);
 console.log(arr4);
 
@@ -42,7 +42,7 @@ console.log(arr8);
 
 // changing Element
 console.log(arr);
-arr[0] = 'Guava';
+arr[0] = 'guava';
 console.log(arr);
 
 // Includes
@@ -135,13 +135,26 @@ arr21 = newArr.findIndex(function(num){
 })
 console.log(arr21);
 
+// sort
+console.log(newArr);
+arr22 = newArr.sort(function(a, b){
+    return a-b;
+})
+console.log(arr22)
 
+console.log(arr);
+arr23 = arr.sort(function(a, b){
+    if( a > b){
+        return 1;
+    }else if(a < b){
+        return -1
+    } else {
+        return 0;
+    }
+});
+console.log(arr23);
 
-
-
-
-
-
-
-
+var fruits = ["APPLE", "apple", "Apple", "APPle"];
+aaa = fruits.sort();
+console.log(aaa);
 
